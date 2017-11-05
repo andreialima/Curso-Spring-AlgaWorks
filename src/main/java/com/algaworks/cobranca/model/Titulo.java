@@ -70,6 +70,7 @@ public class Titulo {
 		result = prime * result + ((codigo == null) ? 0 : codigo.hashCode());
 		return result;
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -85,6 +86,10 @@ public class Titulo {
 		} else if (!codigo.equals(other.codigo))
 			return false;
 		return true;
+	}
+	
+	public boolean isPendente(){
+		return StatusTitulo.PENDENTE.equals(this.status);
 	}
 
 }
