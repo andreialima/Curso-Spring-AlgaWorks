@@ -6,7 +6,7 @@
 	<groupId>com.algaworks</groupId>
 	<artifactId>cobranca</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>cobranca</name>
 	<description>Curso Spring Boot</description>
@@ -55,7 +55,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
-		</dependency>		
+		</dependency>	
+		<dependency>
+        	<groupId>org.webjars</groupId>
+        	<artifactId>angularjs</artifactId>
+        	<version>1.4.4</version>
+    	</dependency>	
 	</dependencies>
 
 	<build>
